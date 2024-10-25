@@ -47,7 +47,7 @@ Run the script to start consuming messages from a Kafka cluster:
 
 ```python3.12 consumer.py [-l[--log]]``` 
     
-- The ```-l``` or ```--log``` flag enables logging of invalid messages to a log file.
+- The ```-l``` or ```--log``` flag disables logging of invalid messages to a log file.
 
 ## Configuration
 
