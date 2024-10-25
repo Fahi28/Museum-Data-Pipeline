@@ -81,7 +81,7 @@ If logging is enabled, invalid messages will be recorded in the specified log fi
 
 ## Dashboard
 
-The dashboard will provide a visual representation of the data processed from the Kafka messages and offer insights into the system’s performance. 
+The dashboard will provide a visual representation of the data processed from the Kafka messages. 
 
 ### Wireframe
 
