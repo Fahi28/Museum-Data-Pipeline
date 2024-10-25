@@ -8,6 +8,7 @@ This script reads real-time messages from a Kafka cluster, cleans the data, and 
 - [Configuration](#configuration)
 - [Logging](#logging)
 - [Functions](#functions)
+- [Dashboard](#dashboard)
 
 ## Installation
 
@@ -77,3 +78,19 @@ If logging is enabled, invalid messages will be recorded in the specified log fi
 - ```validate_keys(data)```: Validates the keys in the Kafka message.
 - ```process_message(msg)```: Processes a Kafka message and validates its keys.
 - ```upload_to_database(connect, db_cursor, message)```: Uploads validated data to the database.
+
+## Dashboard
+
+The dashboard will provide a visual representation of the data processed from the Kafka messages and offer insights into the system’s performance. 
+
+### Wireframe
+
+Below is the wireframe design:
+
+![Wireframe Design](dashboard/wireframe.png)
+
+### Dashboard
+
+Below is the dashboard design:
+
+![Dashboard Design](dashboard/dashboard.png)
