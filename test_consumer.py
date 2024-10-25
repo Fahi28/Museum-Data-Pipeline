@@ -28,7 +28,7 @@ def test_create_consumer(mock_consumer):
         'sasl.username': config.get('USERNAME'),
         'sasl.password': config.get('PASSWORD'),
         'group.id': gv.GROUP_ID,
-        'auto.offset.reset': 'earliest',
+        'auto.offset.reset': 'latest',
         'fetch.min.bytes': gv.FETCH_MIN_BYTES,
         'fetch.wait.max.ms': gv.FETCH_WAIT_MAX_MS
     })

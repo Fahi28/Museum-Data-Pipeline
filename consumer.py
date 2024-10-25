@@ -262,12 +262,12 @@ if __name__ == "__main__":
 
     args = parse_arguments()
     if args.log:
-        app_logger = setup_logger(gv.LOGGER_FILE_NAME)
+        APP_LOGGER = setup_logger(gv.LOGGER_FILE_NAME)
     else:
-        app_logger = None
+        APP_LOGGER = None
 
     consumer = create_consumer(config)
     conn = get_connection(config)
     app_cursor = get_cursor(conn)
     consumer.subscribe([gv.TOPIC])
-    messages(consumer, conn, app_cursor, app_logger)
+    messages(consumer, conn, app_cursor, APP_LOGGER)

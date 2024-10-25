@@ -15,6 +15,6 @@ NUM_OF_EXHIBITIONS = range(0, 6)
 ACCEPTABLE_TYPES = {0, 1}
 POLL_TIME = 1
 LOGGER_FILE_NAME = 'invalid_messages.log'
-GROUP_ID = '665577443322dsadasvffdsfffhffdfdhhggfddg'
+GROUP_ID = '665577443322dsadaddsvffdsfffhffdfdhhggfddg'
 FETCH_MIN_BYTES = 1
 FETCH_WAIT_MAX_MS = 100
