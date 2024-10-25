@@ -87,7 +87,7 @@ The dashboard will provide a visual representation of the data processed from th
 
 Below is the wireframe design:
 
-![Wireframe Design](dashboard/wireframe.png)
+![Wireframe Design](dashboard/wireframe_design.png)
 
 ### Dashboard
 
