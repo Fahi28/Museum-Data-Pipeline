@@ -1,4 +1,4 @@
-# pylint: skip-file
+"""Script that stores all global variables for other files."""
 
 from datetime import time
 

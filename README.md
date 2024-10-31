@@ -22,9 +22,11 @@ cd repository-name
 
 You can create a virtual environment and install the dependencies using pip:
 
-```python -m venv .venv```.
-```source .venv/bin/activate```  # On Windows use `.venv\Scripts\activate`.
-```pip install -r requirements.txt```.
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows use .venv\Scripts\activate
+pip install -r requirements.txt
+```
 
 3. **Create a ```.env``` file**
 
@@ -72,11 +74,11 @@ If logging is enabled, invalid messages will be recorded in the specified log fi
 ### Key Functions
 
 - ```parse_arguments()```: Parses command line arguments.
-- ```setup_logger(log_file, log_level)```: Configures and returns a logger.
-- ```create_consumer(config)```: Creates and configures a Kafka consumer.
-- ```decode_message(msg)```: Decodes a Kafka message.
-- ```validate_keys(data)```: Validates the keys in the Kafka message.
-- ```process_message(msg)```: Processes a Kafka message and validates its keys.
+- ```setup_logger(log_file, log_level)```: Configures and returns a logger -> returns a logger object.
+- ```create_consumer(config)```: Creates and configures a Kafka consumer -> returns a consumer object.
+- ```decode_message(msg)```: Decodes a Kafka message -> returns message in JSON format.
+- ```validate_message_keys(data)```: Validates the keys in the Kafka message -> returns a dictionary containing the validated message.
+- ```process_message(msg)```: Processes a Kafka message and validates its keys -> returns either a dictionary or None value.
 - ```upload_to_database(connect, db_cursor, message)```: Uploads validated data to the database.
 
 ## Dashboard
